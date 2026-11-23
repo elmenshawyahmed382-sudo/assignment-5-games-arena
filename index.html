@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Games website</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Syne:wght@700;800&display=swap" rel="stylesheet">
+  <link href="style.css" rel="stylesheet">
+</head>
+
+<body data-bs-spy="scroll" data-bs-target="#mainNav" data-bs-offset="100" tabindex="0">
+
+  <!-- ===== NAVBAR ===== -->
+  <nav class="navbar navbar-expand-lg sticky-top" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand brand" href="#home">
+        <i class="bi bi-controller"></i> GameArena
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navMenu">
+        <ul class="navbar-nav me-auto ms-lg-4 mb-2 mb-lg-0">
+          <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#games">OUR GAMES</a></li>
+          <li class="nav-item"><a class="nav-link" href="#services">What We Do</a></li>
+          <li class="nav-item"><a class="nav-link" href="#team">Our Team</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact Us</a></li>
+        </ul>
+        <div class="d-flex align-items-center gap-4">
+          <i class="bi bi-bell fs-5"></i>
+          <i class="bi bi-chat-square fs-5"></i>
+          <a href="#" class="btn btn-lime">Sign In</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ===== HERO ===== -->
+  <section id="home" class="hero d-flex align-items-center">
+    <div class="container position-relative">
+      <div class="row align-items-center g-5">
+        <div class="col-lg-6">
+          <h1 class="hero-title">THE ULTIMATE <span class="text-lime">GAMING</span> EXPERIENCE</h1>
+          <p class="hero-text my-4">
+            Join millions of gamers worldwide in the most competitive eSports tournaments.
+            Experience next-level gaming with cutting-edge technology and endless possibilities.
+          </p>
+          <div class="d-flex flex-wrap gap-3">
+            <a href="#" class="btn btn-lime btn-lg">Start Gaming Now</a>
+            <a href="#" class="btn btn-outline-lime btn-lg">Watch Tournaments</a>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="hero-img-wrap position-relative">
+            <img src="images/hero-img.png" class="img-fluid w-100" alt="Gaming setup">
+            <div class="stat-card d-flex align-items-center gap-3">
+              <i class="bi bi-trophy-fill text-lime fs-3"></i>
+              <div>
+                <small class="text-secondary d-block">Active Players</small>
+                <strong class="fs-5">2.5M+</strong>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== OUR GAMES ===== -->
+  <section id="games" class="py-5">
+    <div class="container py-5 text-center">
+      <span class="section-tag">OUR GAMES</span>
+      <h2 class="section-title">Our Latest Games</h2>
+
+      <div id="gamesCarousel" class="carousel slide mt-5">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="row g-4">
+              <div class="col-md-4"><img src="images/latest-games-1.png" class="game-img" alt="Game 1"></div>
+              <div class="col-md-4"><img src="images/latest-games-2.png" class="game-img" alt="Game 2"></div>
+              <div class="col-md-4"><img src="images/latest-games-3.png" class="game-img" alt="Game 3"></div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="row g-4">
+              <div class="col-md-4"><img src="images/latest-games-4.png" class="game-img" alt="Game 4"></div>
+              <div class="col-md-4"><img src="images/latest-games-5.png" class="game-img" alt="Game 5"></div>
+              <div class="col-md-4"><img src="images/latest-games-6.png" class="game-img" alt="Game 6"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="d-flex justify-content-center align-items-center gap-3 mt-5">
+        <button class="arrow-btn" data-bs-target="#gamesCarousel" data-bs-slide="prev"><i class="bi bi-arrow-left"></i></button>
+        <button class="arrow-btn" data-bs-target="#gamesCarousel" data-bs-slide="next"><i class="bi bi-arrow-right"></i></button>
+        <a href="#" class="btn btn-outline-lime btn-lg text-uppercase">View All Games</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== WHAT WE DO ===== -->
+  <section id="services" class="py-5">
+    <div class="container py-5 text-center">
+      <span class="section-tag">WHAT WE DO</span>
+      <h2 class="section-title">More Than Just Games<br>We Build <span class="text-lime">Interactive</span> Journeys</h2>
+
+      <div class="row g-4 mt-4">
+        <!-- Row 1 -->
+        <div class="col-12 col-sm-6 col-lg-3">
+          <div class="service-card"><div class="icon-box"><i class="bi bi-display"></i></div><h5>PC Game<br>Development</h5></div>
+        </div>
+        <div class="col-12 col-sm-6 col-lg-3">
+          <div class="service-card"><div class="icon-box"><i class="bi bi-phone"></i></div><h5>Mobile Game<br>Development</h5></div>
+        </div>
+        <div class="col-12 col-sm-6 col-lg-3">
+          <div class="service-card p-0"><img src="images/what-we-do-1.png" alt="Controller"></div>
+        </div>
+        <div class="col-12 col-sm-6 col-lg-3">
+          <div class="service-card"><div class="icon-box"><i class="bi bi-headset-vr"></i></div><h5>AR/VR<br>Solutions</h5></div>
+        </div>
+
+        <!-- Row 2 -->
+        <div class="col-12 col-sm-6 col-lg-3">
+          <div class="service-card"><div class="icon-box"><i class="bi bi-boxes"></i></div><h5>AR/VR<br>Design</h5></div>
+        </div>
+        <div class="col-12 col-sm-6 col-lg-3">
+          <div class="service-card p-0"><img src="images/what-we-do-2.png" alt="Character"></div>
+        </div>
+        <div class="col-12 col-sm-6 col-lg-3">
+          <div class="service-card"><div class="icon-box"><i class="bi bi-playstation"></i></div><h5>PS4 Game<br>Development</h5></div>
+        </div>
+        <div class="col-12 col-sm-6 col-lg-3">
+          <div class="service-card"><div class="icon-box"><i class="bi bi-box-fill"></i></div><h5>3D<br>Modelings</h5></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Glow line + logos marquee -->
+    <div class="container"><div class="glow-line"></div></div>
+    <div class="marquee-section pt-5">
+      <div class="marquee mb-3">
+        <div class="marquee-track">
+          <img src="images/logo-1.jpg" alt=""><img src="images/logo-2.jpg" alt=""><img src="images/logo-3.jpg" alt="">
+          <img src="images/logo-4.jpg" alt=""><img src="images/logo-5.jpg" alt=""><img src="images/logo-6.jpg" alt="">
+          <img src="images/logo-1.jpg" alt=""><img src="images/logo-2.jpg" alt=""><img src="images/logo-3.jpg" alt="">
+          <img src="images/logo-4.jpg" alt=""><img src="images/logo-5.jpg" alt=""><img src="images/logo-6.jpg" alt="">
+        </div>
+      </div>
+      <div class="marquee">
+        <div class="marquee-track reverse">
+          <img src="images/logo-6.jpg" alt=""><img src="images/logo-5.jpg" alt=""><img src="images/logo-4.jpg" alt="">
+          <img src="images/logo-3.jpg" alt=""><img src="images/logo-2.jpg" alt=""><img src="images/logo-1.jpg" alt="">
+          <img src="images/logo-6.jpg" alt=""><img src="images/logo-5.jpg" alt=""><img src="images/logo-4.jpg" alt="">
+          <img src="images/logo-3.jpg" alt=""><img src="images/logo-2.jpg" alt=""><img src="images/logo-1.jpg" alt="">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== OUR TEAM ===== -->
+  <section id="team" class="py-5">
+    <div class="container py-5 text-center">
+      <span class="section-tag">OUR TEAM</span>
+      <h2 class="section-title">Our Best Team Members</h2>
+      <p class="section-sub">Meet the professional gamers and experts behind our success</p>
+
+      <div class="row g-4 mt-4 text-start">
+        <div class="col-6 col-lg-3">
+          <div class="team-card">
+            <img src="images/avatar-1.png" alt="Alex Chen">
+            <div class="team-info">
+              <h5>Alex "Phantom" Chen</h5>
+              <p class="role">Pro Player - VALORANT</p>
+              <p class="achv">World Champion 2023</p>
+            </div>
+            <span class="nick">Phantom</span>
+          </div>
+        </div>
+        <div class="col-6 col-lg-3">
+          <div class="team-card">
+            <img src="images/avatar-2.png" alt="Ali Ahmed">
+            <div class="team-info">
+              <h5>Ali "Nova" Ahmed</h5>
+              <p class="role">Pro Player - League of Legends</p>
+              <p class="achv">MVP 2023 Season</p>
+            </div>
+            <span class="nick">Nova</span>
+          </div>
+        </div>
+        <div class="col-6 col-lg-3">
+          <div class="team-card">
+            <img src="images/avatar-3.png" alt="Marcus Rodriguez">
+            <div class="team-info">
+              <h5>Marcus "Viper" Rodriguez</h5>
+              <p class="role">Head Coach - CS:GO</p>
+              <p class="achv">5x Major Winner</p>
+            </div>
+            <span class="nick">Viper</span>
+          </div>
+        </div>
+        <div class="col-6 col-lg-3">
+          <div class="team-card">
+            <img src="images/avatar-4.png" alt="Seif Usama">
+            <div class="team-info">
+              <h5>Seif "Saga" Usama</h5>
+              <p class="role">Strategic Analyst</p>
+              <p class="achv">Data Science Expert</p>
+            </div>
+            <span class="nick">Saga</span>
+          </div>
+        </div>
+
+        <!-- Row 2: غيّر الأسماء والأدوار من التصميم -->
+        <div class="col-6 col-lg-3">
+          <div class="team-card">
+            <img src="images/avatar-5.png" alt="">
+            <div class="team-info"><h5>Name</h5><p class="role">Role</p><p class="achv">Achievement</p></div>
+            <span class="nick">Nick</span>
+          </div>
+        </div>
+        <div class="col-6 col-lg-3">
+          <div class="team-card">
+            <img src="images/avatar-6.png" alt="">
+            <div class="team-info"><h5>Name</h5><p class="role">Role</p><p class="achv">Achievement</p></div>
+            <span class="nick">Nick</span>
+          </div>
+        </div>
+        <div class="col-6 col-lg-3">
+          <div class="team-card">
+            <img src="images/avatar-7.png" alt="">
+            <div class="team-info"><h5>Name</h5><p class="role">Role</p><p class="achv">Achievement</p></div>
+            <span class="nick">Nick</span>
+          </div>
+        </div>
+        <div class="col-6 col-lg-3">
+          <div class="team-card">
+            <img src="images/avatar-8.png" alt="">
+            <div class="team-info"><h5>Name</h5><p class="role">Role</p><p class="achv">Achievement</p></div>
+            <span class="nick">Nick</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CONTACT ===== -->
+  <section id="contact" class="py-5">
+    <div class="container py-5">
+      <div class="text-center">
+        <span class="section-tag">CONTACT US</span>
+        <h2 class="section-title">Get In Touch</h2>
+        <p class="section-sub">Have questions or need support? We're here to help!</p>
+      </div>
+
+      <div class="row g-4 mt-4">
+        <div class="col-lg-6">
+          <div class="contact-card mb-4">
+            <div class="contact-icon"><i class="bi bi-geo-alt-fill"></i></div>
+            <div><h5>Our Location</h5><p>123 Gaming Street, Esports City, EC 12345</p></div>
+          </div>
+          <div class="contact-card mb-4">
+            <div class="contact-icon"><i class="bi bi-telephone-fill"></i></div>
+            <div><h5>Phone Number</h5><p>+1 (555) 123-4567</p></div>
+          </div>
+          <div class="contact-card">
+            <div class="contact-icon"><i class="bi bi-envelope-fill"></i></div>
+            <div><h5>Email Address</h5><p>info@gamearena.com</p></div>
+          </div>
+        </div>
+
+        <div class="col-lg-6">
+          <form class="contact-card contact-form d-block">
+            <h3 class="mb-4">Send us a Message</h3>
+            <div class="row g-3">
+              <div class="col-md-6">
+                <label class="form-label" for="fn">First Name</label>
+                <input type="text" id="fn" class="form-control" placeholder="Your first name">
+              </div>
+              <div class="col-md-6">
+                <label class="form-label" for="ln">Last Name</label>
+                <input type="text" id="ln" class="form-control" placeholder="Your last name">
+              </div>
+              <div class="col-12">
+                <label class="form-label" for="em">Email Address</label>
+                <input type="email" id="em" class="form-control" placeholder="your.email@example.com">
+              </div>
+              <div class="col-12">
+                <label class="form-label" for="sub">Subject</label>
+                <select id="sub" class="form-select">
+                  <option selected>General Inquiry</option>
+                  <option>Support</option>
+                  <option>Partnership</option>
+                </select>
+              </div>
+              <div class="col-12">
+                <label class="form-label" for="msg">Message</label>
+                <textarea id="msg" rows="5" class="form-control" placeholder="Tell us how we can help you..."></textarea>
+              </div>
+              <div class="col-12">
+                <button type="submit" class="btn btn-lime btn-lg w-100">Send Message</button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
